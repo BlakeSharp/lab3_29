@@ -15,12 +15,14 @@ int main(int argc, char *argv[]) {
 
     // Loop through each command-line argument to calculate the sum
     int i;
+    float count; 
     for (i = 1; i < argc; i++) {
         sum += atoi(argv[i]);
+	count++;
     }
 
     // Calculate the average
-    float average = sum / 10;
+    float average = (sum / count);
 
     printf("Average: %.2f\n", average);
 
